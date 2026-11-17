@@ -41,21 +41,21 @@
       <div class="about-text">
         <p data-bind="intro"></p>
         <div class="hero-actions">
-          <a class="btn" href="./#works">See the works</a>
-          <a class="link-arrow" href="files.html">Download the files</a>
+          <a class="btn" href="./#works" data-text="heroButton">See the works</a>
+          <a class="link-arrow" href="files.html" data-text="heroFilesLink">Download the files</a>
         </div>
       </div>
       <aside class="about-links" aria-labelledby="about-links-title">
-        <h2 class="about-links-title" id="about-links-title">Find me</h2>
+        <h2 class="about-links-title" id="about-links-title" data-text="aboutLinksHeading">Find me</h2>
         <ul data-bind="about-links"></ul>
       </aside>
     </div>
     <section class="about-work" aria-labelledby="about-work-title">
       <div class="sec-head">
-        <h2 class="sec-title" id="about-work-title">Recent episodes</h2>
+        <h2 class="sec-title" id="about-work-title" data-text="aboutRecentHeading">Recent episodes</h2>
       </div>
       <ol class="cards" data-bind="about-cards"></ol>
-      <p class="about-work-more"><a class="link-arrow" href="./#works">See every episode</a></p>
+      <p class="about-work-more"><a class="link-arrow" href="./#works" data-text="aboutRecentLink">See every episode</a></p>
     </section>
     <section class="glance glance--inline" aria-label="At a glance">
       <dl class="glance-list" data-bind="glance"></dl>
@@ -66,8 +66,8 @@
   <footer class="end" id="contact" aria-labelledby="end-title">
     <div class="end-top">
       <div class="end-invite">
-        <h2 class="end-title" id="end-title">To be continued.</h2>
-        <p class="end-line">More coming soon.</p>
+        <h2 class="end-title" id="end-title" data-text="footerHeading">To be continued.</h2>
+        <p class="end-line" data-text="footerLine">More coming soon.</p>
         <a class="btn btn--paper" href="about.html" data-bind="primary-contact">Say hello</a>
       </div>
       <ul class="end-links" data-bind="links"></ul>

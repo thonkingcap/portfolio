@@ -42,8 +42,8 @@
         <div class="hero-copy">
           <p class="hero-tagline" data-bind="tagline">Prototyping portfolio.</p>
           <div class="hero-actions">
-            <a class="btn" href="#works">See the works</a>
-            <a class="link-arrow" href="files.html">Download the files</a>
+            <a class="btn" href="#works" data-text="heroButton">See the works</a>
+            <a class="link-arrow" href="files.html" data-text="heroFilesLink">Download the files</a>
           </div>
         </div>
         <figure class="hero-cover" hidden>
@@ -61,15 +61,15 @@
 
     <section class="featured" aria-labelledby="featured-title">
       <div class="sec-head">
-        <h2 class="sec-title" id="featured-title">Start here</h2>
+        <h2 class="sec-title" id="featured-title" data-text="featuredHeading">Start here</h2>
       </div>
       <ol class="featured-grid" data-bind="featured"></ol>
     </section>
 
     <section class="works" id="works" aria-labelledby="works-title">
       <div class="sec-head">
-        <h2 class="sec-title" id="works-title">All episodes</h2>
-        <p class="sec-note">Click any project to see more.</p>
+        <h2 class="sec-title" id="works-title" data-text="allHeading">All episodes</h2>
+        <p class="sec-note" data-text="allSubheading">Click any project to see more.</p>
       </div>
       <div class="chips" role="group" aria-label="Filter by category" data-bind="chips"></div>
       <p class="filter-status" role="status" aria-live="polite" data-bind="filter-status"></p>
@@ -79,15 +79,15 @@
 
     <div class="teasers">
       <section class="about-teaser" aria-labelledby="about-teaser-title">
-        <h2 class="sec-title" id="about-teaser-title">About me</h2>
+        <h2 class="sec-title" id="about-teaser-title" data-text="aboutTeaserHeading">About me</h2>
         <p class="about-teaser-text" data-bind="intro"></p>
-        <a class="link-arrow" href="about.html">More about me</a>
+        <a class="link-arrow" href="about.html" data-text="aboutTeaserLink">More about me</a>
       </section>
       <section class="files-teaser" aria-labelledby="files-teaser-title">
-        <h2 class="sec-title" id="files-teaser-title">Print files</h2>
+        <h2 class="sec-title" id="files-teaser-title" data-text="filesTeaserHeading">Print files</h2>
         <p class="files-teaser-text" data-bind="files-summary">All my print files, free to download.</p>
         <ul class="files-teaser-list" data-bind="files-sample"></ul>
-        <a class="btn btn--ink" href="files.html">See all files</a>
+        <a class="btn btn--ink" href="files.html" data-text="filesTeaserLink">See all files</a>
       </section>
     </div>
   </main>
@@ -95,8 +95,8 @@
   <footer class="end" id="contact" aria-labelledby="end-title">
     <div class="end-top">
       <div class="end-invite">
-        <h2 class="end-title" id="end-title">To be continued.</h2>
-        <p class="end-line">More coming soon.</p>
+        <h2 class="end-title" id="end-title" data-text="footerHeading">To be continued.</h2>
+        <p class="end-line" data-text="footerLine">More coming soon.</p>
         <a class="btn btn--paper" href="about.html" data-bind="primary-contact">Say hello</a>
       </div>
       <ul class="end-links" data-bind="links"></ul>

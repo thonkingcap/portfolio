@@ -632,6 +632,11 @@
       data = await res.json();
     } catch (e) { fail(e); return; }
 
+    const siteText = data.site || {};
+    document.querySelectorAll("[data-text]").forEach((el) => {
+      const v = siteText[el.dataset.text];
+      if (typeof v === "string" && v.trim()) el.textContent = v;
+    });
     const person = data.person || {};
     const projects = arr(data.projects)
       .map((p, k) => ({ ...p, episode: Number.isFinite(p.episode) ? p.episode : k + 1 }))

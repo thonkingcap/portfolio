@@ -1,4 +1,21 @@
 {
+  "site": {
+    "heroButton": "See the works",
+    "heroFilesLink": "Download the files",
+    "featuredHeading": "Start here",
+    "allHeading": "All episodes",
+    "allSubheading": "Click any project to see more.",
+    "aboutTeaserHeading": "About me",
+    "aboutTeaserLink": "More about me",
+    "filesTeaserHeading": "Print files",
+    "filesTeaserLink": "See all files",
+    "footerHeading": "To be continued.",
+    "footerLine": "More coming soon.",
+    "filesPageHeading": "File library",
+    "aboutLinksHeading": "Find me",
+    "aboutRecentHeading": "Recent episodes",
+    "aboutRecentLink": "See every episode"
+  },
   "person": {
     "name": "Daniel (Dani) Idemudia",
     "tagline": "I like making stuff you can actually hold.",
@@ -555,27 +572,60 @@
       "files": []
     },
     {
+      "id": "curtain-hook",
+      "title": "Blackout curtain hook",
+      "category": "3D Print",
+      "date": "2026-10",
+      "tools": [
+        "Bambu Studio"
+      ],
+      "summary": "A hook that holds my blackout curtains back when I'm not using them.",
+      "story": [
+        "My roommate and I are both light sleepers, so we've got blackout curtains. I made this hook to hold them out of the way during the day.",
+        "The ring wraps around the curtain and the flat plate mounts to the wall."
+      ],
+      "highlights": [],
+      "photos": [
+        {
+          "src": "assets/photos/curtain-hook.jpg",
+          "thumb": "assets/photos/curtain-hook-thumb.jpg",
+          "alt": "White printed C-shaped hook holding a black curtain against a wall",
+          "caption": "Holding the curtain back."
+        }
+      ],
+      "renders": [
+        {
+          "src": "assets/renders/curtain-ring.jpg",
+          "alt": "Render of the C-shaped curtain hook",
+          "caption": "The 3D model"
+        }
+      ],
+      "files": [
+        {
+          "label": "Curtain hook (STL)",
+          "href": "files/curtain-hook.zip",
+          "size": "68 KB"
+        }
+      ],
+      "episode": 10
+    },
+    {
       "id": "experiments",
-      "episode": 10,
-      "title": "Small experiments",
+      "episode": 11,
+      "title": "Horse diorama",
       "category": "3D Print",
       "date": "2026-10",
       "tools": [
         "Meshy AI",
         "Bambu Studio"
       ],
-      "summary": "Quick test prints.",
+      "summary": "A horse on a little meadow base.",
       "story": [
-        "A curtain ring clip I printed to test the fit, and a horse on a little meadow base."
+        "A horse I generated and put on a round meadow base with a fence."
       ],
       "highlights": [],
       "photos": [],
       "renders": [
-        {
-          "src": "assets/renders/curtain-ring.jpg",
-          "alt": "Render of a C-shaped curtain ring clip",
-          "caption": "Curtain ring fit test"
-        },
         {
           "src": "assets/renders/horse-diorama.jpg",
           "alt": "Render of a horse on a round meadow base with a fence",
@@ -584,8 +634,8 @@
       ],
       "files": [
         {
-          "label": "Curtain ring + horse diorama (STL)",
-          "href": "files/experiments.zip",
+          "label": "Horse diorama (STL)",
+          "href": "files/horse-diorama.zip",
           "size": "6.7 MB"
         }
       ]
