@@ -249,15 +249,15 @@
   function renderGlance(projects) {
     const total = (f) => projects.reduce((s, p) => s + f(p), 0);
     const stats = [
-      { jp: "話", label: "Projects", value: projects.length },
-      { jp: "印刷", label: "Projects with print files", value: projects.filter((p) => arr(p.files).length).length },
-      { jp: "写真", label: "Photos of the real thing", value: total((p) => arr(p.photos).length) },
-      { jp: "データ", label: "Files to download", value: total((p) => arr(p.files).length) },
+      { label: "Projects", value: projects.length },
+      { label: "Projects with print files", value: projects.filter((p) => arr(p.files).length).length },
+      { label: "Photos of the real thing", value: total((p) => arr(p.photos).length) },
+      { label: "Files to download", value: total((p) => arr(p.files).length) },
     ].filter((s) => s.value > 0);
     bindAll("glance").forEach((dl) => dl.replaceChildren(
       ...stats.map((s, i) =>
         h("div", { class: "glance-item", "data-reveal": "", style: `--i:${i}` },
-          h("dt", null, h("span", { lang: "ja", "aria-hidden": "true", text: s.jp }), s.label),
+          h("dt", null, s.label),
           h("dd", { text: String(s.value) })))));
   }
 
@@ -266,8 +266,7 @@
     const c = coverFor(p);
     const frame = h("span", { class: "card-frame" },
       c ? picture(c.src, "", { fallback: c.full !== c.src ? c.full : null }) : null,
-      h("span", { class: "card-ep", text: epLabel(p) }),
-      p.jp ? h("span", { class: "card-jp", lang: "ja", "aria-hidden": "true", text: p.jp }) : null);
+      h("span", { class: "card-ep", text: epLabel(p) }));
     if (!c) { frame.classList.add("is-missing"); frame.append(h("span", { class: "missing-note", text: "Pictures coming soon" })); }
     if (c && c.pos) frame.querySelectorAll("img").forEach((im) => { im.style.objectPosition = c.pos; });
     return h("a", { class: "card-link", href: workURL(p) },
@@ -426,7 +425,6 @@
     frame.addEventListener("click", () => getLightbox().open(media, idx, frame));
     return h("figure", { class: `shot shot--${kind}`, "data-reveal": "", style: `--i:${kind === "file" ? 0 : 2}` },
       h("p", { class: "shot-tag" },
-        h("span", { lang: "ja", "aria-hidden": "true", text: kind === "file" ? "設計" : "実物" }),
         kind === "file" ? "The file" : "The real print"),
       frame,
       item.caption ? h("figcaption", { text: item.caption }) : null);
@@ -448,7 +446,6 @@
     return h("section", { class: `gallery gallery--${kind}`, "aria-labelledby": id },
       h("div", { class: "gallery-head" },
         h("h2", { class: "gallery-title", id },
-          h("span", { lang: "ja", "aria-hidden": "true", text: isFile ? "設計" : "実物" }),
           isFile ? "The file" : "The real print"),
         h("p", { class: "gallery-note", text: isFile
           ? `${list.length} render${list.length === 1 ? "" : "s"} of the 3D model, before anything was printed.`
@@ -473,7 +470,6 @@
       document.title = `Episode not found · ${chrome.shortName}`;
       main.replaceChildren(
         h("section", { class: "lost", "aria-labelledby": "lost-title" },
-          h("p", { class: "lost-jp", lang: "ja", "aria-hidden": "true", text: "迷子" }),
           h("h1", { class: "lost-title", id: "lost-title", text: "This episode doesn't exist." }),
           h("p", { class: "lost-text", text: id ? `There's no project called "${id}". It may have been renamed.` : "The link didn't name a project." }),
           h("div", { class: "hero-actions" },
@@ -501,11 +497,10 @@
       ...renders.map((m) => ({ src: m.src, alt: m.alt, caption: m.caption, kind: "file" })),
     ];
 
-    const meta = [["Category", p.category], ["Date", formatDate(p.date)], ["Role", p.role]].filter(([, v]) => v);
+    const meta = [["Category", p.category], ["Date", formatDate(p.date)]].filter(([, v]) => v);
     const head = h("header", { class: "ch-head" },
       h("p", { class: "ch-ep", "data-reveal": "" }, h("span", { text: "EP." }), pad(p.episode)),
       h("h1", { class: "ch-title", "data-reveal": "", style: "--i:1" }, p.title),
-      p.jp ? h("p", { class: "ch-jp", lang: "ja", "aria-hidden": "true", text: p.jp }) : null,
       meta.length ? h("dl", { class: "ch-meta", "data-reveal": "", style: "--i:2" },
         meta.map(([k, v]) => h("div", null, h("dt", { text: k }), h("dd", { text: v })))) : null);
 
@@ -526,19 +521,19 @@
 
     const notes = [];
     if (highlights.length) notes.push(h("div", { "data-reveal": "", style: "--i:1" },
-      h("h2", null, h("span", { lang: "ja", "aria-hidden": "true", text: "要点" }), "Highlights"),
+      h("h2", null, "Highlights"),
       h("ul", { class: "highlights" }, highlights.map((t) => h("li", { text: t })))));
     if (tools.length) notes.push(h("div", { "data-reveal": "", style: "--i:2" },
-      h("h2", null, h("span", { lang: "ja", "aria-hidden": "true", text: "道具" }), "Tools"),
+      h("h2", null, "Tools"),
       h("ul", { class: "tools" }, tools.map((t) => h("li", { text: t })))));
     if (files.length) notes.push(h("div", { "data-reveal": "", style: "--i:3", id: "downloads" },
-      h("h2", null, h("span", { lang: "ja", "aria-hidden": "true", text: "データ" }), "Print files"),
+      h("h2", null, "Print files"),
       fileList(files)));
 
     const body = (story.length || notes.length)
       ? h("div", { class: "ch-body" },
           story.length ? h("section", { class: "story", "aria-labelledby": "story-title", "data-reveal": "" },
-            h("h2", { class: "story-title", id: "story-title" }, h("span", { lang: "ja", "aria-hidden": "true", text: "物語" }), "The story"),
+            h("h2", { class: "story-title", id: "story-title" }, "The story"),
             story.map((t) => h("p", { text: t }))) : null,
           notes.length ? h("aside", { class: "notes", "aria-label": "Project details" }, notes) : null)
       : null;
@@ -552,7 +547,7 @@
       : h("span", { class: `pager-link pager-link--${dir} pager-link--empty`, "aria-hidden": "true" });
     const pager = h("nav", { class: "pager", "aria-label": "Episodes" },
       pagerLink(prev, "prev"),
-      h("a", { class: "pager-home", href: "./#works" }, h("span", { lang: "ja", "aria-hidden": "true", text: "目次" }), "All episodes"),
+      h("a", { class: "pager-home", href: "./#works" }, "All episodes"),
       pagerLink(next, "next"));
 
     main.replaceChildren(

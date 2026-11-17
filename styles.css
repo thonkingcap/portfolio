@@ -207,9 +207,8 @@ ol, ul { padding: 0; }
 }
 .hanko {
   position: absolute; right: 10px; bottom: -14px;
-  writing-mode: vertical-rl;
   background: var(--accent); color: var(--on-accent);
-  padding: 12px 8px; font-size: clamp(16px, 1.5vw, 22px); line-height: 1;
+  padding: 8px 12px; text-transform: uppercase; letter-spacing: .08em; font-size: clamp(16px, 1.5vw, 22px); line-height: 1;
   transform: rotate(4deg);
 }
 
