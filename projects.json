@@ -19,7 +19,7 @@
   "person": {
     "name": "Daniel (Dani) Idemudia",
     "tagline": "I like making stuff you can actually hold.",
-    "intro": "Here's what I've designed, 3D printed and built. Each project shows the 3D file next to the real print, and you can download the files.",
+    "intro": "Here's what I've designed, 3D printed and built. For my 3D prints, I usually use a mix of Claude and Meshy.",
     "links": [
       {
         "label": "GitHub",
@@ -40,7 +40,8 @@
         "Bambu Studio",
         "Bambu Lab X1",
         "NFC (NTAG)",
-        "SwiftUI"
+        "SwiftUI",
+        "Meshy"
       ],
       "summary": "The NFC coin for Beaver Dam, an app I'm building that locks your apps until you tap it.",
       "cover": {
@@ -48,12 +49,12 @@
         "alt": "White 3D-printed round coin with a raised beaver face"
       },
       "story": [
-        "Beaver Dam blocks your distracting apps. The only way to unlock them is to tap this coin with your phone, and there's an NFC tag sealed inside.",
-        "My first version used a cheap tag that kept missing taps. So I printed a bunch of versions, changing one thing at a time (size, wall thickness, how deep the tag sits) until it read every time."
+        "The Beaver Dam is an FME remake that is based around the Brick. We create a physical layer between you and your phone.",
+        "My first version used a cheap tag that kept missing taps. So I printed a bunch of versions, changing one thing at a time (size, wall thickness, how deep the tag sits) until we got closer and closer. We're currently waiting on NTAG 424 DNA chips for the next version."
       ],
       "highlights": [
         "3 early concepts, then a 100 mm and a 70 mm version",
-        "The tag sits under a printed cap so it can't fall out"
+        "The tag sits under a printed cap so it can't fall out (in one of the versions). Now, we insert a pause command and then place the NFC tag mid way through printing."
       ],
       "photos": [
         {
@@ -121,9 +122,9 @@
         "Bambu Studio",
         "PLA"
       ],
-      "summary": "A desk-size model of Powertown's battery unit. The door opens and the batteries slide out.",
+      "summary": "I made a 3D model of the product my startup sells: the Powerblock.",
       "story": [
-        "Powertown puts batteries at local businesses and schools to cut their power bills. Most people have never seen one, so I made a model you can open up and hold.",
+        "Powertown puts batteries at local businesses and schools to cut their power bills.",
         "It took four versions. I printed it in white first, then in black for presentations."
       ],
       "highlights": [
@@ -228,7 +229,7 @@
         "Tree supports",
         "PLA"
       ],
-      "summary": "A winged statue of me, about 20 cm tall.",
+      "summary": "I made a statue of myself for trolls.",
       "story": [
         "I turned a photo of myself into a 3D model with Meshy, then added the wings, the fist and the base with my name on it.",
         "The wings were the hardest part. They needed a lot of support, which you can see in the second photo before I cleaned it off."
@@ -315,7 +316,7 @@
         {
           "src": "assets/renders/koko-test-figure.jpg",
           "alt": "Render of the small test figure",
-          "caption": "50 mm test figure"
+          "caption": "This is a crappy version Meshy made. I handed this to my friend first to mess around with him before giving him the real version."
         }
       ],
       "files": [
@@ -337,7 +338,7 @@
         "NFC sticker tags",
         "PLA"
       ],
-      "summary": "Bike-shaped keychains with an NFC tag in one wheel.",
+      "summary": "I'm bringing a Bike sharing program to Babson College. I printed out these bicycles, with a spot to place the NFC tag.",
       "story": [
         "One wheel holds a round NFC sticker and the other has text on it. I went through a few versions before printing a batch.",
         "This was my first time putting NFC in a print, before the Beaver Dam coin."
@@ -386,7 +387,7 @@
         "Bambu Studio",
         "PLA"
       ],
-      "summary": "Nameplates for the Powertown team, with the logo on top.",
+      "summary": "I made nameplates for my employers.",
       "story": [
         "Each person gets a navy base with their name and the Powertown logo pressed into the top.",
         "I set it up so anyone on the team can make their own. You give Claude the template, ask it to change the name, and print it."
@@ -424,7 +425,7 @@
     {
       "id": "bust-series",
       "episode": 7,
-      "title": "Bust and medallion series",
+      "title": "More statues of myself without the addons",
       "category": "3D Print",
       "date": "2026-10",
       "tools": [
@@ -433,9 +434,9 @@
         "Bambu Studio",
         "PLA"
       ],
-      "summary": "The same bust of me, printed a bunch of times.",
+      "summary": "I felt like the other statues of myself were doing a bit much so I simplified the design and printed them out.",
       "story": [
-        "Before the winged statue, I printed my bust at a few sizes to see how much detail would hold up.",
+        "Printed these out",
         "I also made a version on a pedestal and a flat medallion for the wall."
       ],
       "highlights": [
@@ -446,8 +447,8 @@
         {
           "src": "assets/photos/bust-lineup.jpg",
           "thumb": "assets/photos/bust-lineup-thumb.jpg",
-          "alt": "Five small black printed busts on round cork-backed bases in a row",
-          "caption": "Five test prints."
+          "alt": "5 black statues of myself of varying sizes",
+          "caption": "My beautiful creations"
         }
       ],
       "renders": [
@@ -482,7 +483,7 @@
       "category": "3D Print",
       "date": "2026-10",
       "tools": [],
-      "summary": "A small bust with wired earbuds hanging from the ears.",
+      "summary": "I made my friend Nico a statue. Really simple..just used Meshy.",
       "story": [
         "A 50 mm head-and-shoulders bust. The hair and the thin earbud wires were the tricky parts at this size."
       ],
@@ -521,11 +522,11 @@
         "BIOS setup",
         "Cable management"
       ],
-      "summary": "Computers I've built or upgraded myself.",
+      "summary": "Computers I've built or upgraded myself. I've built three total for myself and friends.",
       "story": [
         "White build: Ryzen 5 5600, ASRock B550 board, white Corsair case, an RTX Founders Edition card and a 1 TB NVMe drive.",
         "Black build: NZXT case, ASUS TUF board, Sapphire Radeon card and purple RGB.",
-        "I also upgraded a Dell mini PC from a 240 GB SSD to 1 TB, and I've got a white ASUS RTX card ready for the next one."
+        "I also upgraded a Dell mini PC from a 240 GB SSD to 1 TB, and I've got a white ASUS 4070 card ready for the next one."
       ],
       "highlights": [
         "Picked the parts and put them together myself"
@@ -564,7 +565,7 @@
         {
           "src": "assets/photos/asus-rtx-white-1.jpg",
           "thumb": "assets/photos/asus-rtx-white-1-thumb.jpg",
-          "alt": "White ASUS GeForce RTX card in its box",
+          "alt": "White ASUS GeForce RTX 4070 card in its box",
           "caption": "Next upgrade."
         }
       ],
@@ -619,7 +620,7 @@
         "Meshy AI",
         "Bambu Studio"
       ],
-      "summary": "A horse on a little meadow base.",
+      "summary": "Ermm I made this for my friend who misses home. The background is a park from her hometown in Maryland and she likes riding horses.",
       "story": [
         "A horse I generated and put on a round meadow base with a fence."
       ],
