@@ -448,8 +448,8 @@
         h("h2", { class: "gallery-title", id },
           isFile ? "The file" : "The real print"),
         h("p", { class: "gallery-note", text: isFile
-          ? `${list.length} render${list.length === 1 ? "" : "s"} of the 3D model, before anything was printed.`
-          : `${list.length} photo${list.length === 1 ? "" : "s"} of the physical object. Tap one to look closer.` })),
+          ? `${list.length} preview${list.length === 1 ? "" : "s"} of the 3D model, before printing.`
+          : `${list.length} photo${list.length === 1 ? "" : "s"} of the real thing.` })),
       ol);
   }
 

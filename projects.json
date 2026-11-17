@@ -1,8 +1,8 @@
 {
   "person": {
     "name": "Daniel (Dani) Idemudia",
-    "tagline": "I make things you can hold: prints, prototypes and machines.",
-    "intro": "A collection of what I've designed, printed and built: product prototypes for two startup teams, statues sculpted with AI and finished by hand in the slicer, NFC hardware for an iPhone app, and the PCs I've built from parts. Every 3D project links the real print to the file it came from, and the files are free to download.",
+    "tagline": "I like making stuff you can actually hold.",
+    "intro": "Here's what I've designed, 3D printed and built. Each project shows the 3D file next to the real print, and you can download the files.",
     "links": [
       {
         "label": "GitHub",
@@ -25,34 +25,31 @@
         "NFC (NTAG)",
         "SwiftUI"
       ],
-      "summary": "A printed beaver coin with an NFC tag sealed inside. Tap it with your phone to unlock the apps you blocked.",
+      "summary": "The NFC coin for Beaver Dam, an app I'm building that locks your apps until you tap it.",
       "cover": {
         "src": "assets/photos/beaver-roundel-cover.jpg",
         "alt": "White 3D-printed round coin with a raised beaver face"
       },
       "story": [
-        "The Beaver Dam is an iPhone focus app I'm building with a team. You lock distracting apps with Screen Time, and the only everyday way to unlock them is to physically tap a beaver token with your phone. The token has to sit on a desk or a keychain and still read on the first tap, every time.",
-        "My first prototype used a cheap tag inside a printed block. It often missed the first tap and sometimes died completely. So I wrote a hardware brief for the team and treated the token as an experiment: change one variable at a time (tag size, how much plastic sits over it, where it lines up with the phone's antenna, how well it's protected) and print a family of variants to test.",
-        "The designs are parametric. Wall thickness, tag-pocket diameter and tag depth are numbers at the top of the file, so each test print changes exactly one thing. The current design is a 100 mm roundel with a beaver in relief. The tag drops into a pocket and a printed cap seals it in, and a 70 mm version uses the same idea in a smaller size."
+        "Beaver Dam blocks your distracting apps. The only way to unlock them is to tap this coin with your phone, and there's an NFC tag sealed inside.",
+        "My first version used a cheap tag that kept missing taps. So I printed a bunch of versions, changing one thing at a time (size, wall thickness, how deep the tag sits) until it read every time."
       ],
       "highlights": [
-        "3 early concepts (A, B, C), then 100 mm and 70 mm roundels",
-        "Separate 30 mm cap seals the tag in, so it can't peel off or shift",
-        "Edge slot shows the tag pocket. A full build plate prints several at once",
-        "Pairs with a working SwiftUI app that reads the tag to end a focus session"
+        "3 early concepts, then a 100 mm and a 70 mm version",
+        "The tag sits under a printed cap so it can't fall out"
       ],
       "photos": [
         {
           "src": "assets/photos/beaver-roundel-face.jpg",
           "thumb": "assets/photos/beaver-roundel-face-thumb.jpg",
           "alt": "White 3D-printed round coin with a raised beaver face",
-          "caption": "The printed roundel: beaver relief on white PLA."
+          "caption": "The printed coin."
         },
         {
           "src": "assets/photos/beaver-roundel-edge.jpg",
           "thumb": "assets/photos/beaver-roundel-edge-thumb.jpg",
           "alt": "Edge of the white roundel showing a rectangular slot into the tag pocket",
-          "caption": "Edge view of the slot into the sealed tag pocket."
+          "caption": "Side view. The tag goes in this slot."
         }
       ],
       "renders": [
@@ -107,66 +104,63 @@
         "Bambu Studio",
         "PLA"
       ],
-      "summary": "A desk-sized model of an energy-storage unit with a hinged door and five battery modules that slide out.",
+      "summary": "A desk-size model of Powertown's battery unit. The door opens and the batteries slide out.",
       "story": [
-        "Powertown installs Powerblocks, on-site battery storage that charges when power is cheap and runs the building when it's expensive, at no cost to local businesses, schools and town buildings. Most people have never seen one, so the team needed something they could put on a table and open.",
-        "I modeled a one-piece shell with rails for five black battery modules, a front door on a printed hinge, and a faceplate with the rating and logo in relief. The inside of the door has raised blocks standing in for the inverter, controller and wiring, so opening it shows what's inside the real thing.",
-        "It went through four versions. v1 was a simple block, v2 added the door, v3 split the parts by color, and v4 added the textured faceplate and vent grille. I printed it in white for the first prototype (125 kW) and then in black for the presentation version (130 kW)."
+        "Powertown puts batteries at local businesses and schools to cut their power bills. Most people have never seen one, so I made a model you can open up and hold.",
+        "It took four versions. I printed it in white first, then in black for presentations."
       ],
       "highlights": [
-        "4 design versions, from a simple block to a working door and slide-out modules",
-        "Multi-part assembly: shell, hinged door, faceplate, 5 modules",
-        "Printed hinge with no hardware. The modules slide on printed rails",
-        "Used as a hands-on prop in community and college pitches"
+        "Hinged door and 5 slide-out batteries, all printed",
+        "4 versions"
       ],
       "photos": [
         {
           "src": "assets/photos/powerblock-white-1.jpg",
           "thumb": "assets/photos/powerblock-white-1-thumb.jpg",
           "alt": "White printed Powerblock box open with five black modules inside",
-          "caption": "White prototype, door open, modules in."
+          "caption": "White version, door open."
         },
         {
           "src": "assets/photos/powerblock-white-2.jpg",
           "thumb": "assets/photos/powerblock-white-2-thumb.jpg",
           "alt": "Top-down view of the open white Powerblock with modules",
-          "caption": "Top-down: door detail on the left, module bay on the right."
+          "caption": "From the top."
         },
         {
           "src": "assets/photos/powerblock-white-3.jpg",
           "thumb": "assets/photos/powerblock-white-3-thumb.jpg",
           "alt": "Empty white Powerblock shell next to the 125 kW faceplate",
-          "caption": "Empty shell showing the module rails, beside the 125 kW faceplate."
+          "caption": "Empty, with the front panel."
         },
         {
           "src": "assets/photos/powerblock-white-4.jpg",
           "thumb": "assets/photos/powerblock-white-4-thumb.jpg",
           "alt": "125 kW American Power faceplate held next to the box",
-          "caption": "Faceplate with logo and vent grille in relief."
+          "caption": "Front panel."
         },
         {
           "src": "assets/photos/powerblock-black-1.jpg",
           "thumb": "assets/photos/powerblock-black-1-thumb.jpg",
           "alt": "Hand sliding a black battery module out of the black Powerblock",
-          "caption": "Black version: a module sliding out."
+          "caption": "Black version, pulling a battery out."
         },
         {
           "src": "assets/photos/powerblock-black-2.jpg",
           "thumb": "assets/photos/powerblock-black-2-thumb.jpg",
           "alt": "Front of the black Powerblock with all five modules",
-          "caption": "All five modules in place."
+          "caption": "All five batteries in."
         },
         {
           "src": "assets/photos/powerblock-black-3.jpg",
           "thumb": "assets/photos/powerblock-black-3-thumb.jpg",
           "alt": "Closed black Powerblock seen from the side",
-          "caption": "Closed up."
+          "caption": "Closed."
         },
         {
           "src": "assets/photos/powerblock-130kw.jpg",
           "thumb": "assets/photos/powerblock-130kw-thumb.jpg",
           "alt": "Black 130 kW American Power faceplate",
-          "caption": "Final 130 kW faceplate."
+          "caption": "Final front panel."
         }
       ],
       "renders": [
@@ -217,29 +211,27 @@
         "Tree supports",
         "PLA"
       ],
-      "summary": "A 20 cm winged self-portrait bust on an engraved two-tier base, from a single photo to a finished print.",
+      "summary": "A winged statue of me, about 20 cm tall.",
       "story": [
-        "I turned a photo of myself into a 3D bust with Meshy AI, then did the real work by hand. I cleaned up the mesh, added wings and a raised fist, and built a two-tier pedestal with engraved lettering.",
-        "The hard part was the wings. They're thin, overhang a lot and fan out away from the body, so I used tree supports that branch up from the base without touching the face. The second photo shows the print fresh off the plate with the supports still on, and the first shows it cleaned up."
+        "I turned a photo of myself into a 3D model with Meshy, then added the wings, the fist and the base with my name on it.",
+        "The wings were the hardest part. They needed a lot of support, which you can see in the second photo before I cleaned it off."
       ],
       "highlights": [
-        "About 23 × 16 × 20 cm, printed in one piece",
-        "Tree supports for long, thin overhanging wings",
-        "Engraved base lettering",
-        "Also made an 18 cm desk version"
+        "Printed in one piece",
+        "Also made an 18 cm version"
       ],
       "photos": [
         {
           "src": "assets/photos/winged-statue-front.jpg",
           "thumb": "assets/photos/winged-statue-front-thumb.jpg",
           "alt": "Black winged bust statue on a round base engraved DANI THE KING",
-          "caption": "Finished, with supports removed."
+          "caption": "Finished."
         },
         {
           "src": "assets/photos/winged-statue-supports.jpg",
           "thumb": "assets/photos/winged-statue-supports-thumb.jpg",
           "alt": "Same statue with branching tree supports still under the wings",
-          "caption": "Straight off the printer, tree supports still on."
+          "caption": "Right off the printer, supports still on."
         }
       ],
       "renders": [
@@ -270,23 +262,21 @@
         "Meshy AI",
         "Bambu Studio"
       ],
-      "summary": "A birthday diorama of me and a friend in an anime finishing pose, assembled and engraved with a Python script.",
+      "summary": "A birthday gift for my friend Koko: the two of us as anime-style statues.",
       "story": [
-        "For my friend Koko's birthday I made a diorama of the two of us. I generated each figure with AI, then wrote a Python build script (trimesh + manifold3d) that scales, rotates and places the figures, and generates the pedestal and engraved text. Changing the layout means changing a number and running the script again.",
-        "The first version is a clean plinth that says HAPPY BIRTHDAY KOKO. The anime version adds a starburst backdrop, a flame aura and a scarf on my figure, swords and a headband on Koko's, and a cracked rock base. I also generated five sword poses to pick the strongest silhouette, and printed a 50 mm test figure to check detail at small scale."
+        "I made figures of me and Koko, then wrote a Python script that puts them on a base and adds the text.",
+        "There's a plain version and an anime version with a flame aura, swords and a big starburst behind us. I tried five sword poses before picking one, and did a small test print first."
       ],
       "highlights": [
-        "Pedestal, text and layout generated from code, with settings at the top of the script",
-        "2 versions: a clean plinth and an anime diorama with an aura backdrop",
-        "5 pose variants compared side by side before committing",
-        "50 mm test print to check detail at small scale"
+        "Base, layout and text made with code",
+        "5 pose options"
       ],
       "photos": [
         {
           "src": "assets/photos/mini-figure-white.jpg",
           "thumb": "assets/photos/mini-figure-white-thumb.jpg",
           "alt": "Small white printed figure with curly hair and a raised fist held between fingers",
-          "caption": "50 mm test print to check detail at small scale."
+          "caption": "Small test print."
         }
       ],
       "renders": [
@@ -330,28 +320,26 @@
         "NFC sticker tags",
         "PLA"
       ],
-      "summary": "A small run of bicycle-shaped NFC tags. One wheel holds the tag and the other carries engraved text.",
+      "summary": "Bike-shaped keychains with an NFC tag in one wheel.",
       "story": [
-        "A flat bicycle silhouette where the back wheel is a shallow pocket sized for a round NFC sticker and the front wheel carries engraved text. I iterated the outline across four versions to get the thin frame tubes strong enough, then printed a batch.",
-        "This was my first NFC-in-a-print project, and it's where I learned what a tag needs: a pocket with the right depth so the phone reads it, and a frame thick enough not to snap. That carried straight into the Beaver Dam roundel."
+        "One wheel holds a round NFC sticker and the other has text on it. I went through a few versions before printing a batch.",
+        "This was my first time putting NFC in a print, before the Beaver Dam coin."
       ],
       "highlights": [
-        "Wheel pocket sized for a round NFC inlay",
-        "4 outline versions, then a batch print",
-        "Engraved text in the opposite wheel"
+        "NFC sticker fits in the back wheel"
       ],
       "photos": [
         {
           "src": "assets/photos/bike-nfc-tag.jpg",
           "thumb": "assets/photos/bike-nfc-tag-thumb.jpg",
           "alt": "Black bicycle-shaped tag with an NFC sticker in the rear wheel",
-          "caption": "Finished tag with the NFC inlay in place."
+          "caption": "Finished tag with the NFC sticker in."
         },
         {
           "src": "assets/photos/bike-nfc-tags-batch.jpg",
           "thumb": "assets/photos/bike-nfc-tags-batch-thumb.jpg",
           "alt": "Several black bicycle tags scattered on a wooden table",
-          "caption": "The batch."
+          "caption": "A batch of them."
         }
       ],
       "renders": [
@@ -381,15 +369,14 @@
         "Bambu Studio",
         "PLA"
       ],
-      "summary": "A team nameplate system: one OpenSCAD template, a logo piece that presses in, and a one-page guide so anyone can make their own.",
+      "summary": "Nameplates for the Powertown team, with the logo on top.",
       "story": [
-        "I designed desk figures for the Powertown team: a navy base with the person's name and title, and the Powertown logo mark pressed into a pocket on top.",
-        "Instead of modeling each plate by hand, I wrote the base as an OpenSCAD template and wrote instructions for teammates: upload the .scad to Claude, ask it to change only the name and title, then print with no supports at 0.2 mm layers. A new team member can get a nameplate without me."
+        "Each person gets a navy base with their name and the Powertown logo pressed into the top.",
+        "I set it up so anyone on the team can make their own. You give Claude the template, ask it to change the name, and print it."
       ],
       "highlights": [
-        "One parametric template makes every nameplate",
-        "Logo mark press-fits into the base, no supports needed",
-        "Written handoff guide so teammates can make their own"
+        "One template for every nameplate",
+        "No supports needed"
       ],
       "photos": [],
       "renders": [
@@ -429,22 +416,21 @@
         "Bambu Studio",
         "PLA"
       ],
-      "summary": "One AI-generated self-portrait, printed again and again: a bust lineup, a pedestal bust and a wall medallion.",
+      "summary": "The same bust of me, printed a bunch of times.",
       "story": [
-        "Before the winged statue I printed the same bust several times to learn what holds up at small sizes, like curly hair, eye detail and thin arms. The lineup photo shows those prints side by side on cork-backed bases.",
-        "From the same model I also made a bust on a pedestal and a 100 mm wall medallion in relief, which turns a 3D bust into something nearly flat that hangs on a wall."
+        "Before the winged statue, I printed my bust at a few sizes to see how much detail would hold up.",
+        "I also made a version on a pedestal and a flat medallion for the wall."
       ],
       "highlights": [
-        "5-print lineup comparing detail at small scale",
-        "Same model turned into a relief medallion",
-        "Cork-backed bases for desk use"
+        "5 test prints",
+        "Wall medallion version"
       ],
       "photos": [
         {
           "src": "assets/photos/bust-lineup.jpg",
           "thumb": "assets/photos/bust-lineup-thumb.jpg",
           "alt": "Five small black printed busts on round cork-backed bases in a row",
-          "caption": "Five busts printed side by side to compare detail."
+          "caption": "Five test prints."
         }
       ],
       "renders": [
@@ -479,14 +465,12 @@
       "category": "3D Print",
       "date": "2026-10",
       "tools": [],
-      "summary": "A 50 mm head-and-shoulders portrait with curly hair, a crew-neck tee and wired earbuds trailing from the ears.",
+      "summary": "A small bust with wired earbuds hanging from the ears.",
       "story": [
-        "A small portrait bust: curly hair, eyes looking down, a crew-neck T-shirt, and a pair of wired earbuds running from the ears down over the shirt.",
-        "At this size the challenge is fine detail: the hair texture and the thin, free-hanging earbud cords."
+        "A 50 mm head-and-shoulders bust. The hair and the thin earbud wires were the tricky parts at this size."
       ],
       "highlights": [
-        "50 mm tall: 44.6 × 33.3 × 50 mm",
-        "Hair texture and free-hanging earbud cords as fine-detail tests"
+        "50 mm tall"
       ],
       "photos": [],
       "renders": [
@@ -517,20 +501,17 @@
       "date": "",
       "tools": [
         "Screwdriver",
-        "Patience",
-        "BIOS",
+        "BIOS setup",
         "Cable management"
       ],
-      "summary": "Three computers built or upgraded from parts: a white Ryzen build, a black NZXT RGB build, and a Dell mini-PC storage upgrade.",
+      "summary": "Computers I've built or upgraded myself.",
       "story": [
-        "White build: a Ryzen 5 5600 on an ASRock B550 Phantom Gaming 4/ac in a white Corsair case, with an ID-Cooling tower cooler, white RAM, a 1 TB Silicon Power NVMe drive, an M.2 Wi-Fi card, an EVGA SuperNOVA power supply and an NVIDIA RTX Founders Edition card. I planned the cable routing and wired the fans through a Corsair RGB/fan hub.",
-        "Black build: an NZXT case with an ASUS TUF Gaming board, T-Force Delta RGB memory, a Sapphire Radeon card and a Ryzen with the stock AMD cooler, all lit purple through the mesh top.",
-        "Upgrade: I opened a Dell mini PC and moved it from a 240 GB SATA SSD to a 1 TB NVMe drive. I also have a white ASUS Dual RTX card ready for the next upgrade."
+        "White build: Ryzen 5 5600, ASRock B550 board, white Corsair case, an RTX Founders Edition card and a 1 TB NVMe drive.",
+        "Black build: NZXT case, ASUS TUF board, Sapphire Radeon card and purple RGB.",
+        "I also upgraded a Dell mini PC from a 240 GB SSD to 1 TB, and I've got a white ASUS RTX card ready for the next one."
       ],
       "highlights": [
-        "Full builds from bare parts: CPU, cooler, RAM, NVMe, Wi-Fi card, PSU, GPU",
-        "Front-panel USB, fan hub and RGB wiring",
-        "Storage upgrade on a compact business PC"
+        "Picked the parts and put them together myself"
       ],
       "photos": [
         {
@@ -567,7 +548,7 @@
           "src": "assets/photos/asus-rtx-white-1.jpg",
           "thumb": "assets/photos/asus-rtx-white-1-thumb.jpg",
           "alt": "White ASUS GeForce RTX card in its box",
-          "caption": "Next upgrade: white ASUS Dual RTX."
+          "caption": "Next upgrade."
         }
       ],
       "renders": [],
@@ -583,14 +564,11 @@
         "Meshy AI",
         "Bambu Studio"
       ],
-      "summary": "Quick prints that taught me something: a fit test for a curtain-ring clip, and a horse diorama on a sculpted base.",
+      "summary": "Quick test prints.",
       "story": [
-        "The curtain ring is a fit test for a functional clip, where the gap and the arm thickness have to be right on the first print or it snaps or falls off. The horse diorama started as an AI-generated horse that I placed on a round meadow base with a fence. The second version is the one in the files."
+        "A curtain ring clip I printed to test the fit, and a horse on a little meadow base."
       ],
-      "highlights": [
-        "Functional fit test: clip tolerance",
-        "Character on a sculpted scene base"
-      ],
+      "highlights": [],
       "photos": [],
       "renders": [
         {
