@@ -1,20 +1,6 @@
 {
   "site": {
-    "heroButton": "See the works",
-    "heroFilesLink": "Download the files",
-    "featuredHeading": "Start here",
-    "allHeading": "All episodes",
-    "allSubheading": "Click any project to see more.",
-    "aboutTeaserHeading": "About me",
-    "aboutTeaserLink": "More about me",
-    "filesTeaserHeading": "Print files",
-    "filesTeaserLink": "See all files",
-    "footerHeading": "To be continued.",
-    "footerLine": "More coming soon.",
-    "filesPageHeading": "File library",
-    "aboutLinksHeading": "Find me",
-    "aboutRecentHeading": "Recent episodes",
-    "aboutRecentLink": "See every episode"
+    "pageTitle": "Portfolio"
   },
   "person": {
     "name": "Daniel (Dani) Idemudia",
@@ -32,7 +18,7 @@
       "id": "beaver-dam-roundel",
       "episode": 1,
       "title": "The Beaver Dam NFC roundel",
-      "category": "Product Prototype",
+      "category": "Prototypes",
       "date": "2026-11",
       "tools": [
         "OpenSCAD",
@@ -114,7 +100,7 @@
       "id": "powertown-powerblock",
       "episode": 2,
       "title": "Powertown Powerblock scale model",
-      "category": "Product Prototype",
+      "category": "Prototypes",
       "date": "2026-10",
       "tools": [
         "Claude",
@@ -217,10 +203,58 @@
       ]
     },
     {
-      "id": "dani-the-king",
+      "id": "bike-nfc-tag",
       "episode": 3,
+      "title": "Bike-shaped NFC tags",
+      "category": "Prototypes",
+      "date": "2026-10",
+      "tools": [
+        "Bambu Studio",
+        "NFC sticker tags",
+        "PLA"
+      ],
+      "summary": "I'm bringing a Bike sharing program to Babson College. I printed out these bicycles, with a spot to place the NFC tag.",
+      "story": [
+        "One wheel holds a round NFC sticker and the other has text on it. I went through a few versions before printing a batch.",
+        "This was my first time putting NFC in a print, before the Beaver Dam coin."
+      ],
+      "highlights": [
+        "NFC sticker fits in the back wheel"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/bike-nfc-tag.jpg",
+          "thumb": "assets/photos/bike-nfc-tag-thumb.jpg",
+          "alt": "Black bicycle-shaped tag with an NFC sticker in the rear wheel",
+          "caption": "Finished tag with the NFC sticker in."
+        },
+        {
+          "src": "assets/photos/bike-nfc-tags-batch.jpg",
+          "thumb": "assets/photos/bike-nfc-tags-batch-thumb.jpg",
+          "alt": "Several black bicycle tags scattered on a wooden table",
+          "caption": "A batch of them."
+        }
+      ],
+      "renders": [
+        {
+          "src": "assets/renders/bike-nfc-tag.jpg",
+          "alt": "Render of the bike tag file",
+          "caption": "bike_nfc_tag_solid.stl"
+        }
+      ],
+      "files": [
+        {
+          "label": "Bike tag (STL + 3MF)",
+          "href": "files/bike-nfc-tag.zip",
+          "size": "848 KB"
+        }
+      ]
+    },
+    {
+      "id": "dani-the-king",
+      "episode": 4,
       "title": "\"Dani the King\" winged statue",
-      "category": "3D Print",
+      "category": "3D prints",
       "date": "2026-10",
       "tools": [
         "Meshy AI",
@@ -269,9 +303,9 @@
     },
     {
       "id": "koko-birthday",
-      "episode": 4,
+      "episode": 5,
       "title": "Anime birthday statue for Koko",
-      "category": "3D Print",
+      "category": "3D prints",
       "date": "2026-11",
       "tools": [
         "Python",
@@ -328,58 +362,10 @@
       ]
     },
     {
-      "id": "bike-nfc-tag",
-      "episode": 5,
-      "title": "Bike-shaped NFC tags",
-      "category": "Product Prototype",
-      "date": "2026-10",
-      "tools": [
-        "Bambu Studio",
-        "NFC sticker tags",
-        "PLA"
-      ],
-      "summary": "I'm bringing a Bike sharing program to Babson College. I printed out these bicycles, with a spot to place the NFC tag.",
-      "story": [
-        "One wheel holds a round NFC sticker and the other has text on it. I went through a few versions before printing a batch.",
-        "This was my first time putting NFC in a print, before the Beaver Dam coin."
-      ],
-      "highlights": [
-        "NFC sticker fits in the back wheel"
-      ],
-      "photos": [
-        {
-          "src": "assets/photos/bike-nfc-tag.jpg",
-          "thumb": "assets/photos/bike-nfc-tag-thumb.jpg",
-          "alt": "Black bicycle-shaped tag with an NFC sticker in the rear wheel",
-          "caption": "Finished tag with the NFC sticker in."
-        },
-        {
-          "src": "assets/photos/bike-nfc-tags-batch.jpg",
-          "thumb": "assets/photos/bike-nfc-tags-batch-thumb.jpg",
-          "alt": "Several black bicycle tags scattered on a wooden table",
-          "caption": "A batch of them."
-        }
-      ],
-      "renders": [
-        {
-          "src": "assets/renders/bike-nfc-tag.jpg",
-          "alt": "Render of the bike tag file",
-          "caption": "bike_nfc_tag_solid.stl"
-        }
-      ],
-      "files": [
-        {
-          "label": "Bike tag (STL + 3MF)",
-          "href": "files/bike-nfc-tag.zip",
-          "size": "848 KB"
-        }
-      ]
-    },
-    {
       "id": "powertown-desk-figures",
       "episode": 6,
       "title": "Powertown desk figure kit",
-      "category": "3D Print",
+      "category": "3D prints",
       "date": "2026-10",
       "tools": [
         "OpenSCAD",
@@ -426,7 +412,7 @@
       "id": "bust-series",
       "episode": 7,
       "title": "More statues of myself without the addons",
-      "category": "3D Print",
+      "category": "3D prints",
       "date": "2026-10",
       "tools": [
         "Meshy AI",
@@ -480,7 +466,7 @@
       "id": "nico-bust",
       "episode": 8,
       "title": "Nico portrait bust",
-      "category": "3D Print",
+      "category": "3D prints",
       "date": "2026-10",
       "tools": [],
       "summary": "I made my friend Nico a statue. Really simple..just used Meshy.",
@@ -512,10 +498,79 @@
       ]
     },
     {
+      "id": "curtain-hook",
+      "title": "Blackout curtain hook",
+      "category": "3D prints",
+      "date": "2026-10",
+      "tools": [
+        "Bambu Studio"
+      ],
+      "summary": "A hook that holds my blackout curtains back when I'm not using them.",
+      "story": [
+        "My roommate and I are both light sleepers, so we've got blackout curtains. I made this hook to hold them out of the way during the day.",
+        "The ring wraps around the curtain and the flat plate mounts to the wall."
+      ],
+      "highlights": [],
+      "photos": [
+        {
+          "src": "assets/photos/curtain-hook.jpg",
+          "thumb": "assets/photos/curtain-hook-thumb.jpg",
+          "alt": "White printed C-shaped hook holding a black curtain against a wall",
+          "caption": "Holding the curtain back."
+        }
+      ],
+      "renders": [
+        {
+          "src": "assets/renders/curtain-ring.jpg",
+          "alt": "Render of the C-shaped curtain hook",
+          "caption": "The 3D model"
+        }
+      ],
+      "files": [
+        {
+          "label": "Curtain hook (STL)",
+          "href": "files/curtain-hook.zip",
+          "size": "68 KB"
+        }
+      ],
+      "episode": 9
+    },
+    {
+      "id": "experiments",
+      "episode": 10,
+      "title": "Horse diorama",
+      "category": "3D prints",
+      "date": "2026-10",
+      "tools": [
+        "Meshy AI",
+        "Bambu Studio"
+      ],
+      "summary": "Ermm I made this for my friend who misses home. The background is a park from her hometown in Maryland and she likes riding horses.",
+      "story": [
+        "A horse I generated and put on a round meadow base with a fence."
+      ],
+      "highlights": [],
+      "photos": [],
+      "renders": [
+        {
+          "src": "assets/renders/horse-diorama.jpg",
+          "alt": "Render of a horse on a round meadow base with a fence",
+          "caption": "Horse diorama, iteration 2"
+        }
+      ],
+      "files": [
+        {
+          "label": "Horse diorama (STL)",
+          "href": "files/horse-diorama.zip",
+          "size": "6.7 MB"
+        }
+      ]
+    },
+    {
       "id": "pc-builds",
-      "episode": 9,
+      "episode": 11,
       "title": "PC builds",
-      "category": "Hardware Build",
+      "category": "PC builds",
       "date": "",
       "tools": [
         "Screwdriver",
@@ -571,75 +626,23 @@
       ],
       "renders": [],
       "files": []
-    },
-    {
-      "id": "curtain-hook",
-      "title": "Blackout curtain hook",
-      "category": "3D Print",
-      "date": "2026-10",
-      "tools": [
-        "Bambu Studio"
-      ],
-      "summary": "A hook that holds my blackout curtains back when I'm not using them.",
-      "story": [
-        "My roommate and I are both light sleepers, so we've got blackout curtains. I made this hook to hold them out of the way during the day.",
-        "The ring wraps around the curtain and the flat plate mounts to the wall."
-      ],
-      "highlights": [],
-      "photos": [
-        {
-          "src": "assets/photos/curtain-hook.jpg",
-          "thumb": "assets/photos/curtain-hook-thumb.jpg",
-          "alt": "White printed C-shaped hook holding a black curtain against a wall",
-          "caption": "Holding the curtain back."
-        }
-      ],
-      "renders": [
-        {
-          "src": "assets/renders/curtain-ring.jpg",
-          "alt": "Render of the C-shaped curtain hook",
-          "caption": "The 3D model"
-        }
-      ],
-      "files": [
-        {
-          "label": "Curtain hook (STL)",
-          "href": "files/curtain-hook.zip",
-          "size": "68 KB"
-        }
-      ],
-      "episode": 10
-    },
-    {
-      "id": "experiments",
-      "episode": 11,
-      "title": "Horse diorama",
-      "category": "3D Print",
-      "date": "2026-10",
-      "tools": [
-        "Meshy AI",
-        "Bambu Studio"
-      ],
-      "summary": "Ermm I made this for my friend who misses home. The background is a park from her hometown in Maryland and she likes riding horses.",
-      "story": [
-        "A horse I generated and put on a round meadow base with a fence."
-      ],
-      "highlights": [],
-      "photos": [],
-      "renders": [
-        {
-          "src": "assets/renders/horse-diorama.jpg",
-          "alt": "Render of a horse on a round meadow base with a fence",
-          "caption": "Horse diorama, iteration 2"
-        }
-      ],
-      "files": [
-        {
-          "label": "Horse diorama (STL)",
-          "href": "files/horse-diorama.zip",
-          "size": "6.7 MB"
-        }
-      ]
     }
-  ]
+  ],
+  "old_site_text": {
+    "heroButton": "See the works",
+    "heroFilesLink": "Download the files",
+    "featuredHeading": "Start here",
+    "allHeading": "All episodes",
+    "allSubheading": "Click any project to see more.",
+    "aboutTeaserHeading": "About me",
+    "aboutTeaserLink": "More about me",
+    "filesTeaserHeading": "Print files",
+    "filesTeaserLink": "See all files",
+    "footerHeading": "To be continued.",
+    "footerLine": "More coming soon.",
+    "filesPageHeading": "File library",
+    "aboutLinksHeading": "Find me",
+    "aboutRecentHeading": "Recent episodes",
+    "aboutRecentLink": "See every episode"
+  }
 }
